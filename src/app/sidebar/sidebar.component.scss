@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+      background: #202636;
+      position:abolute;
+      padding-left: 0px;
+      padding-top: 5px;
+      z-index: 1;
+      width: 100%;
+      height:15%;
+      top:0;
+      left: 0;
+  }
+  .left-side h2{
+  color: #fff;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-size: 25px;
+  }
+
+  .left-side button{
+   float:right;
+   margin-top: -30px;
+   margin-right: 40px;
+  }
+  .left-side p{
+      font-size: 20px;
+      color:#1dc4e7;
+      padding-top: 10px;
+  padding-left: 20px;
+  
+  }
+.sidebar {
+    background: #202636;
+    // left: 0;
+    margin-top: -600px;
+    padding-top:20px;
+    width:320px;
+    height: 90%;
+    box-shadow: 0 0 0.5em rgba(0,85,85,0.5);
+}
+
+.sidebar .profile-picture {
+    width: 150px;
+    height:150px;
+    border-radius: 100px;
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sidebar h2{
+    color:rgb(127, 127, 180);
+    margin-top:0;
+    margin-bottom: 60px; 
+    margin-left: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+ .sidebar li a{
+    color: #fff;
+    line-height: 80px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 25px;
+    transition: 0.5s;
+    padding-left: 20px;
+    padding-right: 10px;
+    transition-property:background-color ;
+}
+
+.sidebar li a:hover{
+    color:rgb(147, 121, 173);
+}
+
+.sidebar  li a .mat-icon{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+ label #sidebar_btn{
+     z-index: 1;
+    color:#fff;
+    cursor: pointer;
+    margin-left: 400px;
+}
+ .mat-icon{
+    font-size: 50px;
+    margin-top: -30px;
+}
+ label #sidebar_btn:hover{
+    color:#19b3d3
+}
+// #check:checked ~ .sidebar{
+//  }
+
+@media(max-width:990px){
+#check:checked ~ .sidebar{
+   margin-left: -230px;
+}
+
+.sidebar{
+    width:80px;
+    height: 70%;
+}
+.sidebar li a span{
+    display:none;
+}
+.sidebar  li a .mat-icon{
+    font-size: 40px;
+    margin-right: 10px;
+}
+.sidebar .profile-picture {
+    display: none;
+}
+.sidebar h2{
+    display: none;
+}
+}
+
+
+

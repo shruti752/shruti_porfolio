@@ -1,0 +1,23 @@
+
+.card{
+    height: 300px;
+    width: 350px;
+    float: right;
+     
+}
+.card .card-body{
+    background-color: cadetblue;
+    border-style: solid;
+    border-color: rgb(41, 38, 38);
+    border-radius: 20px;
+    box-shadow: 0 0 2.5em rgba(24, 7, 7, 0.5);
+    padding: 30px;
+    
+    
+}
+
+ .data{
+  height:150px;
+  width:150px;
+  background-color: cadetblue;
+}

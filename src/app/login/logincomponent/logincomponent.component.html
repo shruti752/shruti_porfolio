@@ -1,0 +1,37 @@
+<!-- <p>logincomponent works!</p> -->
+<!-- <h2>Get Request (https://jsonplaceholder.typicode.com/users)</h2> -->
+<div class="upperclass">
+  <!-- <button  routerLink="/login" color="warn" mat-raised-button>Login</button>  -->
+<div class="card">
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">User Name</label>
+              <!-- <label for="exampleInputPassword1">Password</label> -->
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="User Name"  [(ngModel)]="userName" name="something">
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group">
+               
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"  [(ngModel)]="password" name="something">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <div (click)="collapse()" >
+            <button *ngIf='iscollapsed' class="btn btn-primary" (click) = 'loginButton()'>login</button>
+            <button *ngIf='!iscollapsed' class="btn btn-primary" (click)='logoutButton()'>logout</button>
+          </div>
+              </form>     
+        </div>     
+</div>
+
+<div class="data" *ngIf= "message">
+    <p> User name : {{message.userName}}</p>
+    <p> password :{{message.password}}</p>
+    <p> firstname :{{message.firstName}}</p>
+    <p> lastname :{{message.lastName}}</p>
+</div>
+</div>

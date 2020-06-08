@@ -1,0 +1,56 @@
+<!-- //-->
+ <input type="checkbox" id="check">   
+ <header>
+    <div class="left-side">
+        <h2> SHRUTI</h2>
+        <p style ="font-style:italic">shrutishikha18@gmail.com</p>
+           <label for="check">
+            <a id="sidebar_btn" (click)="toggerSideBar()" ><mat-icon  >menu</mat-icon></a>  
+           </label>
+            <button routerLink="/login"  (click)="toggerLogin()" color="warn" mat-raised-button>Login</button>   
+         <!-- <button *ngIf="open" color="warn" mat-raised-button (click)="toggerLogin()" >Logout</button>  -->
+        </div>
+    </header>
+    <app-home></app-home> 
+        <div class="sidebar" >
+            <!-- <div class="center"> -->
+                <img src='../../assets/images/shruti (3).png'  class="profile-picture" alt="">
+                <h2> Shruti</h2>
+            <!-- </div> -->
+            <!-- <ul class="Menu" > -->
+                <li><a routerLink="/Home"(click)="toggerSideBar()"><mat-icon>home</mat-icon><span>Home</span></a></li>
+                <li><a routerLink="/About"  (click)="toggerSideBar()"><mat-icon>info</mat-icon><span>About</span></a></li>
+                <li><a routerLink="/Skills" (click)="toggerSideBar()"><mat-icon>school</mat-icon><span>Skills</span></a></li>
+                <li><a routerLink="/Certification" (click)="toggerSideBar()"><mat-icon>book</mat-icon><span>Certification</span></a></li>
+                <li><a routerLink="/Contact" (click)="toggerSideBar()"><mat-icon>perm_contact_calendar</mat-icon><span>Contact</span></a></li>
+            <!-- </ul> -->
+        </div>
+    
+
+    <!-- <ng-sidebar-container>
+        <ng-sidebar class='sidebar1' [opened]="opened" >
+                    <img src='../../assets/images/shruti (3).png'  class="profile-picture" alt="">
+                    <h2> Shruti</h2>
+                     <p>Sidebar content</p> 
+                     <button (click)="toggerSideBar()">close sidebar</button> 
+                    <ul class="Menu">
+                        <li><a routerLink="/Home"(click)="toggerSideBar()"><mat-icon>home</mat-icon>Home</a></li>
+                        <li><a routerLink="/About"  (click)="toggerSideBar()"><mat-icon>info</mat-icon>About</a></li>
+                        <li><a routerLink="/Skills" (click)="toggerSideBar()"><mat-icon>school</mat-icon>Skills</a></li>
+                        <li><a routerLink="/Certification" (click)="toggerSideBar()"><mat-icon>book</mat-icon>Certification</a></li>
+                        <li><a routerLink="/Contact" (click)="toggerSideBar()"><mat-icon>perm_contact_calendar</mat-icon>Contact</a></li>
+                    </ul>
+                   </ng-sidebar >  
+                         
+    </ng-sidebar-container>
+   
+    
+ -->
+
+
+
+
+
+
+
+  
